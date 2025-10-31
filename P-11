@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+
+	int a;
+	int b;
+	int c;
+	string v;
+
+	cout << "Программа 'Геометрические фигуры'\n";
+	cout << "[1] Линия\n";
+	cout << "Выберите фигуру: ";
+	cin >> a;
+
+	switch (a) {
+	case 1:
+		system("cls");
+		cout << "Фигура 'Линия'\n\n";
+		cout << "[1]Горизонтальная\n";
+		cout << "[2]Вертикальная\n\n";
+		cout << "Выберите тип: \n";
+		cin >> b;
+		switch (b) {
+		case 1:
+			system("cls");
+			cout << "Длина линии(до 10): ";
+			cin >> c;
+			cout << "Симвл линии: ";
+			cin >> v;
+			if (c >= 11) {
+				cout << "Длинна линии до 10\n";
+		}
+			system("cls");
+			cout<<v
+
+
+		case 2:
+			system("cls");
+			cout << "Длина линии(до 10): ";
+			cin >> c;
+			cout << "Симвл линии: ";
+			cin >> v;
+			if (c >= 11) {
+				cout << "Длинна линии до 10\n";
+			}
+			system("cls");
+			cout << v
+		default:
+			cout << "Такого пункта нет в меню";
+		}
+
+	default:
+		cout << "Такого пункта нет в меню";
+	}
+
+}
